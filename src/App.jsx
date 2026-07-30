@@ -11,7 +11,13 @@ const App = () => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
+  // Adds a selected product in the cart
+  const addToCart = (product) => {
+    setCart([...cart, product])
+  }
   // TODO: Implement state for cart management
+  // State used for storing items added in the cart
+  const [cart, setCart] = useState([])
 
   // TODO: Implement state for category filtering
 
