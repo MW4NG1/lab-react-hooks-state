@@ -1,9 +1,10 @@
 import React from "react";
 
-const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
+// The component will receive the current dark mode state and a fucntion that changes the state
+const DarkModeToggle = ({ DarkMode, toggleDarkMode }) => {
   return (
     <button onClick={toggleDarkMode}>
-      {isDarkMode ? "Toggle Light" : "Toggle Dark"}
+      {DarkMode ? "Toggle Light Mode" : "Toggle Dark Mode"}
     </button>
   );
 };
