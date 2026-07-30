@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 // This component recieves all item that are currently in the cart
 const Cart = ({ cart }) => {
@@ -9,13 +9,11 @@ const Cart = ({ cart }) => {
         {/* TODO: Include items here in li tags with text 'ITEM.NAME is in your cart.' */}
         {/* Display each item in the cart */}
         {cart.map((item) => (
-          <li key={item.id}>
-            {item.name} is in your cart
-          </li>
+          <li key={item.id}>{item.name} is in your cart</li>
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
