@@ -55,6 +55,7 @@ const App = () => {
       />
 
       {/* TODO: Implement and render Cart component */}
+      <Cart cart={cart} />
     </div>
   )
 }
